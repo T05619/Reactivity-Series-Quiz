@@ -32,6 +32,7 @@ function reset() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById("completionbox").style.display = "none"
     document.getElementById('input').addEventListener('input', function(event) {
         let valueEntered = this.value;
         if (valueEntered !== "") {
