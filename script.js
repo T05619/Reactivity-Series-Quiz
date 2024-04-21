@@ -15,7 +15,7 @@ function checkElement(input) {
                     if (reactivitySeries[textBox] == "carbon" || reactivitySeries[textBox] == "hydrogen") {
                         document.getElementById(reactivitySeries[textBox]).style.backgroundColor = "#F0AA00"
                     } else {
-                        document.getElementById(reactivitySeries[textBox]).style.backgroundColor = "#DDDDDD"
+                        document.getElementById(reactivitySeries[textBox]).style.removeProperty("background")
                     }
                 }
                 return
