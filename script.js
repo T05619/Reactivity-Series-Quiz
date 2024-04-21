@@ -9,21 +9,26 @@ function checkElement(input) {
             document.getElementById('input').value = "";
             reactivitySeries.splice(i, 1);
             if (reactivitySeries.length == 0) {
-                reactivitySeries = ['potassium', 'sodium', 'lithium', 'calcium', 'magnesium', 'aluminium', 'carbon', 'zinc', 'iron', 'hydrogen', 'copper', 'silver', 'gold', 'platinum'];
-                for (let textBox = 0; textBox < reactivitySeries.length; textBox++) {
-                    document.getElementById(reactivitySeries[textBox]).innerHTML = "Empty";
-                    if (reactivitySeries[textBox] == "carbon" || reactivitySeries[textBox] == "hydrogen") {
-                        document.getElementById(reactivitySeries[textBox]).style.backgroundColor = "#F0AA00"
-                    } else {
-                        document.getElementById(reactivitySeries[textBox]).style.removeProperty("background")
-                    }
-                }
+                document.getElementById("completionbox").style.display = "block"
                 return
             } else {
                 return
             }
         }
     }
+}
+
+function reset() {
+    reactivitySeries = ['potassium', 'sodium', 'lithium', 'calcium', 'magnesium', 'aluminium', 'carbon', 'zinc', 'iron', 'hydrogen', 'copper', 'silver', 'gold', 'platinum'];
+    for (let textBox = 0; textBox < reactivitySeries.length; textBox++) {
+        document.getElementById(reactivitySeries[textBox]).innerHTML = "Empty";
+        if (reactivitySeries[textBox] == "carbon" || reactivitySeries[textBox] == "hydrogen") {
+            document.getElementById(reactivitySeries[textBox]).style.backgroundColor = "#F0AA00"
+        } else {
+            document.getElementById(reactivitySeries[textBox]).style.removeProperty("background")
+        }
+    }
+    document.getElementById("completionbox").style.display = "none"
 }
 
 document.addEventListener('DOMContentLoaded', function() {
