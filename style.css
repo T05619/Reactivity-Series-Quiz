@@ -38,7 +38,7 @@ input {
 }
 
 .completed {
-    display: block;
+    display: none;
     position: absolute;
     top: 39%;
     left: 37%;
