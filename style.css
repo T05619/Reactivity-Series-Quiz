@@ -36,3 +36,62 @@ input {
     border-radius: 5px;
     border-style: none;
 }
+
+@media (max-width: 940px) {
+    p {
+        width: 40%;
+    }
+
+    .box {
+        padding-left: 39%;
+    }
+}
+
+@media (max-width: 400px) {
+    p {
+        width: 60%;
+    }
+
+    .box {
+        padding-left: 30%;
+    }
+}
+
+@media (min-height: 1110px) {
+    p {
+        font-size: 180%;
+    }
+
+    input {
+        font-size: 200%;
+    }
+}
+
+@media (min-height: 1366px) {
+    p {
+        font-size: 220%;
+    }
+
+    input {
+        font-size: 220%;
+    }
+}
+
+@media (min-height: 1600px) {
+    h1 {
+        font-size: 300%;
+    }
+
+    p {
+        width: 40%;
+        font-size: 260%;
+    }
+
+    .box {
+        padding-left: 38%;
+    }
+
+    input {
+        font-size: 240%;
+    }
+}
