@@ -70,6 +70,19 @@ button:hover {
     background-color: rgb(221, 221, 221);
 }
 
+footer {
+    position: fixed;
+    height: 18px;
+    bottom: 5px;
+    padding: 10px;
+    color: rgb(168, 168, 168);
+}
+
+footer a {
+    color: rgb(168, 168, 168);
+    text-decoration: none;
+}
+
 @media (max-width: 940px) {
     p {
         width: 40%;
@@ -89,6 +102,13 @@ button:hover {
     }
 }
 
+@media (max-width: 575px) {
+    footer {
+        top: 2px;
+        font-size: 90%;
+    }
+}
+
 @media (max-width: 400px) {
     p {
         width: 60%;
@@ -101,6 +121,12 @@ button:hover {
     .completed {
         width: 75%;
         left: 14%;
+    }
+}
+
+@media (max-width: 323px) {
+    input {
+        font-size: 100%;
     }
 }
 
